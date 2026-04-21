@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+aqi_project.egg-info/PKG-INFO
+aqi_project.egg-info/SOURCES.txt
+aqi_project.egg-info/dependency_links.txt
+aqi_project.egg-info/requires.txt
+aqi_project.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+fastapi>=0.136.0
+numpy>=2.4.4
+opencv-python>=4.9.0
+pillow>=12.2.0
+python-multipart>=0.0.26
+scikit-image>=0.22.0
+tensorflow>=2.16.1
+uvicorn>=0.44.0
