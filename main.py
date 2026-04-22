@@ -1,6 +1,13 @@
-def main():
-    print("Hello from aqi-project!")
+import uvicorn
+
+# Import the FastAPI instance from app.py
+from app import app
 
 
 if __name__ == "__main__":
-    main()
+    uvicorn.run(
+        "main:app",   # file:variable
+        host="0.0.0.0",
+        port=8000,
+        reload=True
+    )

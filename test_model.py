@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-model = tf.keras.models.load_model("aqi_model.keras")
+model = tf.keras.models.load_model("aqi_model")
 
 print("✅ Model loaded")
 print("Input shape:", model.input_shape)

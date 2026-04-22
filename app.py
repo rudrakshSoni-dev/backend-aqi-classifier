@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 # Load the local original model
-model = tf.keras.models.load_model("aqi_model.keras")
+model = tf.keras.models.load_model("aqi_model")
 
 classes = [
     "GOOD",
@@ -72,8 +72,11 @@ async def predict(file: UploadFile = File(...)):
     confidence = float(np.max(prediction))
 
     return {
-        "label": classes[class_index],
-        "confidence": confidence
+        "prediction": {
+            "label": classes[class_index],
+            "confidence": confidence,
+            "disclaimer": "AI-generated result. May be inaccurate or hallucinated."
+        }
     }
 
 @app.get("/")
