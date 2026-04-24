@@ -75,7 +75,7 @@ async def predict(file: UploadFile = File(...)):
         "prediction": {
             "label": classes[class_index],
             "confidence": confidence,
-            "disclaimer": "AI-generated result. May be inaccurate or hallucinated."
+            "disclaimer": "CNN-generated result. May be inaccurate in beta."
         }
     }
 
